@@ -1,0 +1,9 @@
+name: 'go-changelog action'
+description: 'Launch a workflow to generate changelog from Hashicorp go-changelog pattern'
+author: 'Mickael Stanislas (azrod)'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'download'
+  color: 'blue'
