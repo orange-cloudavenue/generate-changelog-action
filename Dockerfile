@@ -9,7 +9,7 @@ COPY --from=requirements /go/bin/changelog-build /usr/local/bin/changelog-build
 RUN apk add --no-cache git bash && \
     mkdir -p /changelog
 
-WORKDIR /changelog
+WORKDIR /github/workspace
 
 COPY changelog.tmpl .
 COPY release-note.tmpl .
