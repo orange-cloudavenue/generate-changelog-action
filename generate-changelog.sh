@@ -4,6 +4,9 @@ set -x
 set -o errexit
 set -o nounset
 
+# Setup git for github action 
+git config --global --add safe.directory /github/workspace
+
 __dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 __parent="$(dirname "$__dir")"
 __root="$(dirname "$__parent")"
