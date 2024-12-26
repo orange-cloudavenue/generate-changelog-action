@@ -13,6 +13,6 @@ WORKDIR /github/workspace
 
 COPY changelog.tmpl /changelog
 COPY release-note.tmpl /changelog
-COPY generate-changelog.sh changelog
+COPY generate-changelog.sh /changelog
 
 ENTRYPOINT ["/bin/bash","/changelog/generate-changelog.sh"]
