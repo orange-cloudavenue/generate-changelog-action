@@ -5,7 +5,7 @@ set -o errexit
 set -o nounset
 
 # Setup git for github action 
-git config --global --add safe.directory /github/workspace
+git config --global --add safe.directory '*'
 
 CHANGELOG_FILE_NAME="CHANGELOG.md"
 CHANGELOG_TMP_FILE_NAME="CHANGELOG.tmp"
