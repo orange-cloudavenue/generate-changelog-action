@@ -15,4 +15,4 @@ COPY changelog.tmpl .
 COPY release-note.tmpl .
 COPY generate-changelog.sh .
 
-ENTRYPOINT ["/bin/sh","/changelog/generate-changelog.sh"]
+ENTRYPOINT ["/bin/bash","/changelog/generate-changelog.sh"]
